@@ -20,7 +20,6 @@ pipeline {
         stage('Run the docker containers') {
             steps {
                 sh 'docker run -p 8081:80 -d load-balanced-app .'
-   		        sh 'docker run -p 8082:80 -d load-balanced-app .'
    		        sh 'docker run -p 80:8083 -d load-balanced-nginx'
             }
         }
