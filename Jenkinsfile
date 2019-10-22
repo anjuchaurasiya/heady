@@ -6,7 +6,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo "Deploying the respective branch ${params.branch}"
-                git url: "https://github.com/anjuchaurasiya/Load_Balance.git", branch: "${params.branch}" 
+                git url: "https://github.com/anjuchaurasiya/heady.git", branch: "${params.branch}" 
             }
         }
         stage('Removing the current running containers') {
