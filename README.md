@@ -1,2 +1,2 @@
 # heady
-SAT
+pqwSAT
